@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.mgiddaluri.casttest.CheckUP">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Correct UserName and Password"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="25dp"
+        android:typeface="serif"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffff0025" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usname"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:hint="UserName"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:visibility="visible"
+        android:textColor="#ff7ffffd"
+        android:textColorHighlight="#ff8191ff"
+        android:shadowColor="#ffedf4ff"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:ems="10"
+        android:id="@+id/paswd"
+        android:layout_below="@+id/uname"
+        android:layout_alignRight="@+id/uname"
+        android:layout_alignEnd="@+id/uname"
+        android:hint="Password"
+        android:typeface="monospace"
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"
+        android:textColor="#ff7ffffd"
+        android:textColorHighlight="#ff8191ff"
+        android:shadowColor="#ffedf4ff"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login1"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/login"
+        android:layout_weight="0.40"
+        android:layout_marginTop="51dp" />
+
+</LinearLayout>
